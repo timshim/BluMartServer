@@ -27,7 +27,7 @@ app.get('/products', (req, res) => {
     products.push(product);
   }
 
-  res.send(products);
+  res.json({ products });
 });
 
 app.get('/product/:id', (req, res) => {
