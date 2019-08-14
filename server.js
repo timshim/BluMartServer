@@ -27,7 +27,7 @@ app.get('/products', (req, res) => {
     products.push(product);
   }
 
-  res.json({ products });
+  res.json(products);
 });
 
 app.get('/product/:id', (req, res) => {
@@ -39,5 +39,5 @@ app.get('/product/:id', (req, res) => {
     price: 9.99,
     imageUrl: `https://picsum.photos/id/${id}/400/240`,
   }
-  res.json({ product });
+  res.json(product);
 });
